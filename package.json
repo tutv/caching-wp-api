@@ -22,6 +22,9 @@
     },
     "homepage": "https://github.com/tutv95/caching-wp-api#readme",
     "dependencies": {
-        "express": "^4.13.4"
+        "express": "latest",
+        "compression": "latest",
+        "nedb": "latest",
+        "wordpress-rest-api": "latest"
     }
 }

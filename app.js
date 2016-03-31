@@ -3,9 +3,9 @@ var app = express();
 var http = require('http').Server(app);
 var compress = require('compression');
 var fs = require('fs');
-var caching_config = require('./caching-config');
 var datek = require('datek');
 var Datastore = require('nedb');
+var WP = require('wordpress-rest-api');
 
 
 var db_caching = new Datastore({filename: 'databases/caching.db', autoload: true});
@@ -13,7 +13,7 @@ var db_caching = new Datastore({filename: 'databases/caching.db', autoload: true
 app.use(compress());
 app.enable('view cache');
 
-var WP = require('wordpress-rest-api');
+
 var wp = new WP({
 	endpoint: 'http://tu.me/test/wp-json'
 });

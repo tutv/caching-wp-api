@@ -1,0 +1,27 @@
+{
+    "name": "caching-wp",
+    "version": "1.0.0",
+    "description": "Caching for WP API",
+    "main": "index.js",
+    "scripts": {
+        "test": "node index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tutv95/caching-wp-api.git"
+    },
+    "keywords": [
+        "caching",
+        "rest-api",
+        "wordpress"
+    ],
+    "author": "tutv95",
+    "license": "GPL-2.0",
+    "bugs": {
+        "url": "https://github.com/tutv95/caching-wp-api/issues"
+    },
+    "homepage": "https://github.com/tutv95/caching-wp-api#readme",
+    "dependencies": {
+        "express": "^4.13.4"
+    }
+}
